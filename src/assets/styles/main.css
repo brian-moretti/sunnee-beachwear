@@ -1,0 +1,56 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100dvh;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  position: relative;
+  width: fit-content;
+}
+
+.image-container img,
+.thanks-container img,
+.container-setup,
+.container-bottle {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.42);
+}
+
+@media (width < 1280px) {
+  #app {
+    display: block;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .container-setup {
+    display: contents;
+  }
+
+  .thanks-container,
+  .image-container {
+    max-width: 540px;
+    height: fit-content;
+  }
+}

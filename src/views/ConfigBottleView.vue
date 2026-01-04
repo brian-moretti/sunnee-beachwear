@@ -30,9 +30,9 @@ const prevBtnRouter: Ref<IBtnRouter> = ref({})
 const isFirstStep = ref(false)
 
 const cardColors = colors
-const capColor = ref('')
-const bodyColor = ref('')
-const bottomColor = ref('')
+const capColor = ref('#E5E5E5')
+const bodyColor = ref('#E5E5E5')
+const bottomColor = ref('#E5E5E5')
 
 const statoAvanzamento = useStatoAvanzamentoStore()
 
@@ -110,37 +110,61 @@ watch(
 </script>
 
 <template>
-  <div class="container-setup">
-    <DynamicConfigSetupComponent
-      :is-first-step="isFirstStep"
-      :current-setup-bottle="currentSetupBottle"
-      :prev-btn-router="prevBtnRouter"
-      :colors="cardColors"
-      @color-code="setupColorBottle"
-    />
-  </div>
-  <div class="container-bottle">
-    <DynamicBottleComponent
-      :cap-color="capColor"
-      :body-color="bodyColor"
-      :bottom-color="bottomColor"
-    />
+  <div class="wrapper">
+    <div class="container-setup">
+      <DynamicConfigSetupComponent
+        :is-first-step="isFirstStep"
+        :current-setup-bottle="currentSetupBottle"
+        :prev-btn-router="prevBtnRouter"
+        :colors="cardColors"
+        @color-code="setupColorBottle"
+      />
+    </div>
+    <div class="container-bottle">
+      <DynamicBottleComponent
+        :cap-color="capColor"
+        :body-color="bodyColor"
+        :bottom-color="bottomColor"
+      />
+    </div>
   </div>
 </template>
 
 <style scoped>
-.container-setup,
 .container-bottle {
-  border: 1px solid red;
+  height: calc(100dvh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-left: 10px;
+  padding: 3rem;
+  perspective: 800px;
 }
 
-.container-bottle {
-  width: 40%;
-  height: calc(100dvh - 4rem);
+.container-bottle:hover svg {
+  transform: rotateY(-4deg) rotateX(2deg) scale(1.02);
 }
 
 .container-setup {
-  width: 60%;
+  margin-right: 10px;
+  padding: 3rem;
   height: calc(100dvh - 4rem);
+  background-color: #f8f9fa;
+}
+
+@media (width < 1280px) {
+  .wrapper {
+    grid-template-areas: 'title' 'color' 'bottle' 'button';
+  }
+
+  .container-bottle {
+    grid-area: bottle;
+    margin: 0;
+    height: auto;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
 }
 </style>

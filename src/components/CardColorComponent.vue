@@ -19,5 +19,17 @@ function sendColor() {
   border-radius: 6px;
   background-color: var(--color);
   cursor: pointer;
+  transition: transform 0.1s ease;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+div:active {
+  transform: scale(0.95);
+}
+
+@media (width < 1280px) {
+  .square {
+    width: max(70px, 100%);
+  }
 }
 </style>
