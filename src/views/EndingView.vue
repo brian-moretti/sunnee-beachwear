@@ -19,8 +19,10 @@ onMounted(() => {
     <div class="title-container">
       <TitleComponent :title="title" :has-svg="true" />
     </div>
-    <SubTitleComponent :sub-title="subTitle" />
-    <SubTitleComponent :sub-title="infoCustomer" />
+    <div>
+      <SubTitleComponent :sub-title="subTitle" />
+      <SubTitleComponent :sub-title="infoCustomer" />
+    </div>
     <div class="thanks-container">
       <img
         src="../assets/svg/thanks_kids.svg"
@@ -35,6 +37,7 @@ onMounted(() => {
   height: 100dvh;
   align-items: center;
   margin: 3rem 0;
+  gap: 0.5rem;
 }
 
 .thanks-container {

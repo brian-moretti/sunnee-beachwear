@@ -1,48 +1,18 @@
-# vue-project
+# Vue Project - Sunnee Beachwear
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to my first Vue project for Start2Impact University.
 
-## Recommended IDE Setup
+## The Project: Sunnee Bottle Configurator
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+The project opens with a welcome page introducing the Sunnee Beachwear brand and promoting its new kids collection.
 
-## Recommended Browser Setup
+The configurator allows users to customize the bottle by selecting one of ten available colors for each of its three parts: the cap, the body, and the bottom.
+Users can freely go back and change the color of any part at any time during the configuration process.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+At the end of the experience, users are shown a final page with a greeting message.
 
-## Type Support for `.vue` Imports in TS
+Play now: [Vue | Sunnee Bottle Configurator](https://sunnee-bottle-configurator.netlify.app/)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## :incoming_envelope: Contact me
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+If you find some bugs to fix or simply you want to send me a message please write me at [**brianmoretti2512@gmail.com**](mailto:brianmoretti2512@gmail.com) or [**LinkedIn | Brian Moretti**](https://www.linkedin.com/in/brian-moretti/)

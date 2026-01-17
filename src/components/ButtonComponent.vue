@@ -12,7 +12,7 @@ defineProps<{ text: string; btnRouter: IBtnRouter }>()
 
 <style scoped>
 button {
-  width: fit-content;
+  width: 100%;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border: none;
